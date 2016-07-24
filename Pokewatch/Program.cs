@@ -235,8 +235,6 @@ namespace Pokewatch
 			if (Tweet.Length(tweet + " #" + SpellCheckPokemon(pokemon.Type, true)) < 140)
 				tweet += " #" + SpellCheckPokemon(pokemon.Type, true);
 
-			if (Tweet.Length(tweet + " #" + Regex.Replace(region.Name, @"\s+", "")) < 140)
-				tweet += " #" + Regex.Replace(region.Name, @"\s+", "");
 
 			if (Tweet.Length(tweet + " #PokemonGO") < 140)
 				tweet += " #PokemonGO";
